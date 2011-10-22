@@ -1,0 +1,88 @@
+# Sample variables file for BCM94330 SD FC AGB board
+# TSSI parameters not determined yet.
+manfid=0x2d0
+prodid=0x0532
+vendid=0x14e4
+devid=0x4360
+boardtype=0x0532
+boardrev=0x20
+#boardflags: 5GHz FEM: has ext 5GHz PA, ext 5GHz LNA;
+#            2.4GHz FEM: has ext 2.4GHz PA, NO ext 2.4GHz LNA; 
+#            2.4GHz FEM: SP3T switch share with BT;
+#            keep original 0x200.
+# boardflags=0x10080a00
+boardflags=0x10000201
+nocrc=1
+xtalfreq=37400
+boardnum=22
+
+ag0=255
+aa2g=1
+ccode=GB
+
+# 2G PA para_20101106
+pa0b0=5022
+pa0b1=64971
+pa0b2=65402
+pa0itssit=62
+rssismf2g=0xa
+rssismc2g=0x3
+rssisav2g=0x7
+
+#PA parameters for lower a-band_20101110
+pa1lob0=6063
+pa1lob1=503
+pa1lob2=849
+#PA parameters for midband_20101110
+pa1b0=5657
+pa1b1=65091
+pa1b2=299
+#PA parameters for high band_20101110
+pa1hib0=5682
+pa1hib1=860
+pa1hib2=1248
+#pa1itssit=62
+
+rssismf5g=0x4
+rssismc5g=0x7
+rssisav5g=0x1
+
+maxp2ga0=0x4a
+maxp5ga0=0x4a
+sromrev=0
+
+cckpo=0
+ofdm2gpo=0x66666666
+mcs2gpo0=0xaaaa
+mcs2gpo1=0xaaaa
+ofdm5gpo=0x66666666
+mcs5gpo0=0xaaaa
+mcs5gpo1=0xaaaa
+
+
+cckdigfilttype=21
+ofdmdigfilttype=2
+
+macaddr=00:90:4c:c5:12:38
+
+# router related parameters, can be muted.
+il0macaddr=00:90:4c:c5:12:38
+wl0id=0x431b
+
+# support both G and A band ext PA
+extpagain2g=0
+extpagain5g=2
+rfreg033=0x1f
+pacalidx2g=65
+dacrate=160
+
+#swctrlmap_2g=0x84448444,0x82428242,0x82428242,0x414242,0x1ff
+#swctrlmap_5g=0x90509050,0xa868a060,0xa060a060,0x414242,0x2f8
+
+sd_gpout=0
+sd_oobonly=1
+
+swctrlmap_2g=0x84048404, 0x82028202, 0x84048404, 0x010202, 0x1ff
+swctrlmap_5g=0xC040C040, 0xB030A020, 0xC040C040, 0x010A02, 0x2F8
+
+socrambwalloc=0xffffffff
